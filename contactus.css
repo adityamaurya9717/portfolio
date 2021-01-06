@@ -1,0 +1,96 @@
+.contactus-container{
+    width:100%;
+    
+    
+    background-color: cadetblue;
+    display: grid;
+    
+    grid-template-columns: auto auto auto;
+}
+.contactus-container>.grid1{
+   
+
+flex-direction: column;
+display: flex;
+justify-content: center;
+
+    
+
+}
+.contactus-container>.grid1>div>.phone-icon-div{
+  padding-top:20px;
+}
+.contactus-container>.grid1>div>.phone-icon-div>span,
+.contactus-container>.grid1>div>.phone-icon-div>span
+{
+   font-size: 25px;
+   margin-left: 10px;
+}
+
+.contactus-container>.grid2{
+    grid-column: 2 / 4;
+    background-color: gray;
+   
+
+}
+.contactus-container>.grid2>form{
+    width:50%;
+    
+    padding-top:20px;
+    margin:0 auto;
+}
+.contactus-container>.grid2>form>.div-name{
+    position: relative;
+    margin-bottom: 20px;
+}
+.contactus-container>.grid2>form>.div-name>.label{
+    position: absolute;
+    top:10px;
+    left:10%;
+    padding-right: 5px;
+    color:gray;
+    pointer-events: none;
+    transition: 0.7s;
+    overflow: hidden;
+}
+
+.contactus-container>.grid2>form>.div-name>input{
+    width:100%;
+   border-radius: 10px;
+    padding:10px;
+    outline:none;
+    border: none;
+    border-bottom: 2px solid blue;
+    pointer-events: all;
+}
+.contactus-container>.grid2>form>.div-name>input[type=submit]{
+    background-color: green;
+    width:100px;
+    border:none;
+    cursor: pointer;
+}
+.contactus-container>.grid2>form>.div-name>input[type=submit]:hover{
+    background-color: lightgreen;
+}
+
+.contactus-container>.grid2>form>.div-name>input:focus ~ .label,
+.contactus-container>.grid2>form>.div-name>input:valid ~ .label{
+    background-color: transparent;
+    
+    color: black;
+    left:10px;
+    top:-40%;
+    overflow: hidden;
+    
+    
+
+
+}
+
+@media screen and (max-width:550px){
+    .contactus-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
